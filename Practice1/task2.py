@@ -2,7 +2,7 @@
 import math
 
 
-def f2(x):
+def f12(x):
     if x < 179:
         result = math.pow(math.pow(x, 7) - 4 * math.pow(x, 6), 4) + 93 * math.pow(x, 8)
         return '%.2e' % result
@@ -13,6 +13,3 @@ def f2(x):
         result = x * x + 24 * x * x * x - 88
         return '%.2e' % result
 
-
-print(f2(200))
-print(f2(237))
