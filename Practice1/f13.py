@@ -1,4 +1,3 @@
-# вариант №24
 import math
 
 
@@ -11,4 +10,5 @@ def f13(n):
     for i in range(1, n + 1):
         sum2 += (85 * i + math.log1p(i))
 
-    return '%.2e' % (sum1 + sum2)
+    return sum1 + sum2
+
