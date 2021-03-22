@@ -16,8 +16,7 @@ def f22(x):
     x = a + b + c + d + e + f
     return x
 
-
-# print(hex(f22(0x1698850f)))
+print(hex(f22(0x1698850f)))
 # = 0xd303ca14
 # print(hex(f22(0x87574234)))
 # = 0xeaed0508
