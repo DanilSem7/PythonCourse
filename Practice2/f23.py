@@ -1,10 +1,10 @@
 def f23(x):
-    preTable = [[f"{i[0].replace('‐', ' ').split()[2]} {i[0].replace('‐', ' ').split()[1]} {i[0].replace('‐', ' ').split()[0]}".replace(' ', '/'),
+    pretable = [[f"{i[0].replace('‐', ' ').split()[2]} {i[0].replace('‐', ' ').split()[1]} {i[0].replace('‐', ' ').split()[0]}".replace(' ', '/'),
                  f"{i[2].replace(',', '').split('.')[0]+'.'}",
                  f"{i[2].split('!')[1].replace('Нет','Не выполнено').replace('Да','Выполнено')}",
                  ] for i in x]
     table = []
-    for i in preTable:
+    for i in pretable:
         if i not in table:
             table.append(i)
     table = list(map(list, zip(*table)))
